@@ -18,12 +18,96 @@ header{
 #content{
    border: 1px solid red ;
    width: 100%;
-   height: 300px;
+   height: 600px;
    padding: 5px;
 }
 
 #selectCal{
+  border: 1px solid ;
+  display: flex;
+  flex-wrap: wrap;
+  gap:  20px;
+  align-items: center;
+  padding: 4px;
+}
+#selectCal > input{
+  width: 130px;
+  height: 30px;
+  background-color: white;
+  border: none;
+  
+  cursor: pointer;
+}
+#selectCal > input:hover{
+  color: blue;
+  border-bottom: solid blue ;
+}
+/*calc out puts*/
+#calOutPuts{
+  border: 3px solid green;
+  padding: 5px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+#calcContainer{
+  border: 3px solid yellow;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#basicCal{
+  border: 1px solid black;
+  width:350px;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px blue ;
+
+}
+#basicCalcHeading{
+  border: 1px solid red;
+}
+
+#screen{
+  border: 1px solid blue;
+  margin-top: 5px;
+  width: 100%;
+  height: 120px;
+}
+
+#basicCalcButtons{
+  display: grid;
+  grid-template-columns:  80px 80px 80px 80px;
+  grid-template-rows:  50px 50px 50px 50px;
+  gap: 10px;
+  margin-top: 4px;
+}
+#basicCalcButtons > div{
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px  blue;
+}
+#basicCalcButtons > div:hover{
+  opacity: 0.5;
+  color: blue;
+}
+#equalTo{
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+/*more about calculator*/
+#moreCalcContainer{
+  border: 3px solid red;
+  width: 45%;
 }
 
 
@@ -50,7 +134,7 @@ footer{
 .montserrat{
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 320;
   font-style: normal;
 }
 
