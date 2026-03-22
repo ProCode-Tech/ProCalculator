@@ -36,10 +36,16 @@ header > h1{
     width: 25px;
     height: 25px;
     cursor: pointer;
+    visibility: hidden;
 }
 #themes > div:hover{
   border: 3px  white solid;
 }
+#themes > img{
+  width: 30px;
+  height: 30px;
+}
+
 
 
 
@@ -50,6 +56,7 @@ header > h1{
    width: 100%;
  /*  height: 600px;*/
    padding: 5px;
+
 }
 
 #selectCal{
@@ -100,6 +107,7 @@ header > h1{
   box-shadow: 2px 2px 2px 2px black ;
   margin-left: 50px;
   background-color: rgb(255, 255, 255);
+  cursor: default;
 }
 #basicCalcHeading{
   /*border: 1px solid red;*/
@@ -196,16 +204,72 @@ header > h1{
 
 /*Vukona css*/
 footer{
-  margin-top: 40px;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   background-color: black;
-   color:white;
-   height: 50px;
+  margin-top: 46px;
+ display: flex;
+ flex-wrap: wrap;
+ height: 140px;
+ justify-content: space-between;
+ background-color: black;
+ color: white;
+ cursor: default;
+}
+#createdBy{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
 }
 
+#createdBy >p{
+  text-decoration: underline white;
+}
+#createdBy > ul >li{
+  text-decoration: none;
+  list-style: none;
+}
+
+#copyRights{
+   /*border: 1px solid;*/
+   margin-left: 80px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#copyRights > img{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+
+
+#proCodeLogo{
+ /* border: 1px solid;*/
+  margin-right: 20px;
+  width: 300px;
+  padding: 2px;
+}
+#proCodeLogoA{
+ 
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column ;
+  padding: 5px;
+  justify-content: center;
+}
+
+#proCodeLogoA >img{
+  width: 60px;
+  border-radius: 50%;
+  border: 7px solid white ;
+}
 
 
 
