@@ -44,6 +44,7 @@ header > h1{
 #themes > img{
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 
@@ -109,6 +110,7 @@ header > h1{
   background-color: rgb(255, 255, 255);
   cursor: default;
 }
+
 #basicCalcHeading{
   /*border: 1px solid red;*/
 }

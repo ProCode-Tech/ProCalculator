@@ -1,0 +1,97 @@
+@media (max-width:990px){
+    /*header*/
+    #themes > div{
+    /*visibility: visible;*/
+   }
+
+    /*content*/
+    #calcContainer{
+      width: 100%;
+    align-items: center;
+    }
+
+
+    #moreCalcContainer{
+    margin-top: 40px;
+     width: 100%;
+     justify-content: center;
+    align-items: center;
+  }
+
+  #displayMore{
+  border: 1px solid purple;
+  margin-bottom: 20px;
+  }
+  /*footer*/
+
+footer{
+height: auto;
+}
+
+#createdBy{
+  margin-top: 20px;
+  margin-left: 0px;
+  display: block;
+  width: 100%;
+}
+
+#copyRights{
+   /*border: 1px solid;*/
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 0px;
+   width: 100%;
+}
+
+
+}
+
+@media  (max-width:550px){
+    /*header*/
+    header{
+       height: auto; 
+
+    }
+    
+    header > h1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+       margin-left: 20px;
+       text-align: center;
+       width: 100%;
+    }
+
+    #themes{
+  margin-right: 0px;
+  width: 100%;
+  justify-content: flex-end ;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+/*content */
+#selectCal{
+  justify-content: center;
+  align-items: center;
+}
+
+#calcContainer{
+ /* border: 3px solid yellow;*/
+}
+
+#basicCal{
+  margin-left: 0px;
+}
+
+#basicCalcButtons{
+  display: grid;
+  grid-template-columns:  65px 65px 65px 65px;
+  grid-template-rows:  50px 50px 50px 50px;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+
+}
