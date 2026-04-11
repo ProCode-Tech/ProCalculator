@@ -52,6 +52,10 @@ function ChangeThemes(){
       $("#screenFirst").css("border-bottom",`1px ${color} dotted`)
       $("#basicCalcButtons > div").css("box-shadow",`1px 1px 1px  1px ${color}`);
        $("#basicCalcButtons > div").css("color",` ${color}`);
+  
+       //full calculator
+       $("#fullCal").css("box-shadow",`2px 2px 2px 2px ${color}`);
+
 
      //more about calculator
       $("#displayMore").css("box-shadow",`2px 2px 2px 2px ${color}`)
@@ -63,4 +67,25 @@ function ChangeThemes(){
   });
 
 }
-export { InterThemeImgs, ChangeThemes };
+
+function SelectButton(){
+    $("#selectCal > input[value='Basic Calculator']").click(()=>{
+         $("#basicCal").css("display","block");
+        $("#fullCal").css("display","none");
+         $("#selectCal > input[value='Basic Calculator']").css("border-bottom" , `solid black`)
+        $("#selectCal > input[value='Full Calculator']").css("border-bottom" , `none`)
+      
+    });
+  
+     $("#selectCal > input[value='Full Calculator']").click(()=>{
+         $("#basicCal").css("display","none");
+         $("#fullCal").css("display","flex");
+         $("#selectCal > input[value='Full Calculator']").css("border-bottom" , `solid  black`)
+        $("#selectCal > input[value='Basic Calculator']").css("border-bottom" , `none`)
+       
+    });
+     
+}
+
+
+export { InterThemeImgs, ChangeThemes, SelectButton };
